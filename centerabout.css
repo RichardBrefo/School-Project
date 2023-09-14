@@ -1,0 +1,6 @@
+/* Center-align the "About Me" heading */
+.content h1 {
+    text-align: center;
+}
+
+

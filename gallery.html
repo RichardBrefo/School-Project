@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="thumbnail.css">
+    <style>
+        /* Add CSS styles for the gallery layout */
+        .thumbnails {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            grid-gap: 10px; /* Gap between thumbnails */
+        }
+
+        .thumbnails img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer; /* Add cursor pointer to indicate clickability */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="C:\Users\Richard\OneDrive\Desktop\html\Logo 2.png" alt="Your Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="interests.html">My Interests</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <div class="gallery-container">
+        <div class="main-image">
+            <img src="images/image1.jpg" alt="Image 1" id="main-image">
+        </div>
+        <div class="thumbnails">
+            <img src="images/image1.jpg" alt="Thumbnail 1" onclick="window.open('images/image1.jpg')">
+            <!-- Comment indicating the image source -->
+            <p>These are royalty-free pictures from pixaloop.com</p>
+            <img src="images/image2.jpg" alt="Thumbnail 2" onclick="window.open('images/image2.jpg')">
+            <!-- Comment indicating the image source -->
+            <p>These are royalty-free pictures from pixaloop.com</p>
+            <img src="images/image3.jpg" alt="Thumbnail 3" onclick="window.open('images/image3.jpg')">
+            <!-- Comment indicating the image source -->
+            <p>These are royalty-free pictures from pixaloop.com</p>
+            <img src="images/image4.jpg" alt="Thumbnail 4" onclick="window.open('images/image4.jpg')">
+            <!-- Comment indicating the image source -->
+            <p>These are royalty-free pictures from pixaloop.com</p>
+            <img src="images/image5.jpg" alt="Thumbnail 5" onclick="window.open('images/image5.jpg')">
+            <!-- Comment indicating the image source -->
+            <p>These are royalty-free pictures from pixaloop.com</p>
+            <img src="images/image6.jpg" alt="Thumbnail 6" onclick="window.open('images/image6.jpg')">
+            <!-- Comment indicating the image source -->
+            <p>These are royalty-free pictures from pixaloop.com</p>
+            <img src="images/image7.jpg" alt="Thumbnail 7" onclick="window.open('images/image7.jpg')">
+            <!-- Comment indicating the image source -->
+            <p>These are royalty-free pictures from pixaloop.com</p>
+            <img src="images/image8.jpg" alt="Thumbnail 8" onclick="window.open('images/image8.jpg')">
+            <!-- Comment indicating the image source -->
+            <p>These are royalty-free pictures from pixaloop.com</p>
+            <!-- Add more thumbnails as needed -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    
+    <!-- Link to your external CSS files -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="centersquare.css">
+    <link rel="stylesheet" type="text/css" href="centerabout.css">
+
+    <!-- Add CSS styles to justify margins for the page -->
+    <style>
+        body {
+            margin-left: 25.4mm; /* Set the left margin to match an A4 sheet (25.4mm) */
+            margin-right: 25.4mm; /* Set the right margin to match an A4 sheet (25.4mm) */
+        }
+
+        .content {
+            text-align: left; /* Align text to the left */
+            background-color: white; /* Set the background color to white */
+            padding: 20px; /* Add some padding to the content section */
+        }
+    </style>
+
+    <!-- Include the response.js script for form validation and submission -->
+    <script src="response.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Your header content here -->
+        <div id="logo">
+            <!-- I decided to go with another picture for the template pages -->
+            <img src="C:\Users\Richard\OneDrive\Desktop\html\Logo 2.png" alt="Your Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="interests.html">My Interests</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="content">
+            <h1>Contact Me</h1>
+            <p>Feel free to get in touch with me using the contact information provided.</p>
+            
+            <!-- Include your phone number, emails, and LinkedIn profile link -->
+            <p>Phone: <a href="tel:5087408043">508-740-8043</a></p>
+            <p>Email: <a href="mailto:richardbrefo@gmail.com">richardbrefo@gmail.com</a></p>
+            <p>Email: <a href="mailto:richard.brefo@maryland.gov">richard.brefo@maryland.gov</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/richard-brefo-739918181/">LinkedIn Profile</a></p>
+            
+            <!-- Form Section -->
+            <form action="response.html" method="post" onsubmit="return validateForm()">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    
+                    <!-- Textfield -->
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <!-- Textfield -->
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <!-- Textarea -->
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    
+                    <!-- Radio buttons -->
+                    <div>
+                        <p>Gender:</p>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                    </div>
+                    
+                    <!-- Checkboxes -->
+                    <div>
+                        <p>Select Interests:</p>
+                        <label for="interest1">Interest 1</label>
+                        <input type="checkbox" id="interest1" name="interests[]" value="interest1">
+                        <label for="interest2">Interest 2</label>
+                        <input type="checkbox" id="interest2" name="interests[]" value="interest2">
+                        <label for="interest3">Interest 3</label>
+                        <input type="checkbox" id="interest3" name="interests[]" value="interest3">
+                    </div>
+                    
+                    <!-- Select box -->
+                    <div>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="usa">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Submit button -->
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Website</p>
+    </footer>
+</body>
+</html>

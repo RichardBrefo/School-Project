@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        File: index.html
+        Author: Richard Danso Brefo
+        Date: September 7, 2023
+        Description: This is the home page of Richard Brefo's Personal Web Portfolio. It provides an introduction to the website.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page ; Richard Brefo</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="grey.css"> <!-- Link to your additional CSS file -->
+    <style>
+        /* Add this CSS rule to set the content background to white */
+        .content {
+            background-color: white;
+            max-width: 100%; /* Set the maximum width to 100% to make it liquid */
+            margin: 0 auto; /* Center-align the content horizontally */
+            padding: 20px; /* Add padding to the content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow to the content */
+            text-align: justify; /* Justify text */
+        }
+
+        /* Style for the header */
+        header {
+            text-align: center; /* Center-align the header content */
+        }
+
+        /* Style for the logo */
+        #logo {
+            max-width: 100%; /* Make the logo responsive */
+        }
+
+        /* Style for the navigation links */
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+            text-align: center; /* Center-align the navigation links */
+            background-color: #333; /* Change background color of the navigation section */
+        }
+
+        nav ul li {
+            margin-bottom: 10px; /* Add margin between navigation items */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: white; /* Set link color */
+            display: block; /* Make links block-level for padding and spacing */
+        }
+
+        /* Style for the footer navigation links */
+        footer nav ul {
+            text-align: center; /* Center-align the footer navigation links */
+        }
+
+        /* Style for the footer copyright information */
+        footer p {
+            text-align: center; /* Center-align the copyright information */
+        }
+
+        /* CSS for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #333;
+        }
+        
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #333;
+            color: white;
+        }
+        
+        /* CSS for table rows (alternating background colors) */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div id="logo">
+            <!-- This is the website logo, I decided to use my picture. I hope that's fine -->
+            <img src="C:\Users\Richard\OneDrive\Desktop\html\Logo 1.jpg" alt="Your Logo">
+            <!-- This is the Website title -->
+            <h1>Richard Brefo's Personal Web Portfolio</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <!-- This should Navigate me to links to different pages -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- This is the Content Section -->
+    <main>
+        <section id="homepage" class="content"> <!-- Add the "content" class to the section for white background -->
+            <!-- This is the Main heading for the homepage -->
+            <h2>Welcome to Richard Brefo's Home Page</h2>
+            <!-- This is the Introductory text about myself and studies -->
+            <p>My name is Richard Brefo, and I am a student at Capella University studying Information Technology.
+                I am currently enrolled in IT-FPX3240: Web Development and JavaScript and attempting to complete assessment 4.
+            </p>
+            <p>I am 31 years old, married, and work as a Systems Engineer for the State of Maryland; Department of Information Technology.
+                I enjoy playing the piano and photography.
+            </p>
+        </section>
+
+        <!-- Table Section -->
+        <section id="table" class="content">
+            <h2>Sample Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name Of Family</th>
+                        <th>Relation</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Evelyn Ninson</td>
+                        <td>Mother</td>
+                        <td>Tema, Ghana</td>
+                    </tr>
+                    <tr>
+                        <td>Randy Brefo</td>
+                        <td>Brother</td>
+                        <td>Odenton, Maryland, US</td>
+                    </tr>
+                    <tr>
+                        <td>Kingsley Kwesi Brefo</td>
+                        <td>Father</td>
+                        <td>Tema, Ghana</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+<section id="audio" class="content">
+    <h2>Listen to "I'm Yours (Cover)"</h2>
+    <!-- This is a cover to Im Yours by Jason Mraz performed by my best friend Robbie Rubio. I recorded the audio for him and he gave me permission to use it; audio player with controls -->
+    <audio controls>
+        <!-- Provided the path to your audio file -->
+        <source src="C:\Users\Richard\OneDrive\Desktop\html\I'm Yours (Cover).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+    </main>
+
+    <!-- This is the Footer Section -->
+    <footer>
+        <nav>
+            <ul>
+                <!--  A Footer navigation links for contact which also opens the contact.html -->
+                <li><a href="contact.html">Contact Us</a></li>
+                <!-- I can add more links for secondary navigation if needed -->
+            </ul>
+        </nav>
+        <!-- Copyright information for your website -->
+        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

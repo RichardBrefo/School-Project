@@ -1,0 +1,9 @@
+/* Style the header */
+header {
+    background-color: lightgrey; /* Change the background color to light grey */
+    color: navy; /* Change text color to navy blue */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Additional styles can be added here */
